@@ -13,3 +13,6 @@ document.getElementById('download-btn').addEventListener('click', function() {
 
     window.location.href = `/download?url=${encodeURIComponent(videoUrl)}`;
 });
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
